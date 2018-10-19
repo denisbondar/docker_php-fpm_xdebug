@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/var/www
     environment:
-      XDEBUG_CONFIG: "remote_host=192.168.220.1"
+      XDEBUG_CONFIG: "remote_host=192.168.220.1 remote_enable=1"
       PHP_IDE_CONFIG: "serverName=Docker"
     networks:
       - internal
