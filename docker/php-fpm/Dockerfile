@@ -9,4 +9,6 @@ ADD ./php.ini /usr/local/etc/php/php.ini
 RUN wget https://getcomposer.org/installer -O - -q \
     | php -- --install-dir=/bin --filename=composer --quiet
 
+ENV COMPOSER_ALLOW_SUPERUSER 1
+
 WORKDIR /var/www
