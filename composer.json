@@ -4,7 +4,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TestUnit\\": "test/unit/"
+            "TestUnit\\": "tests/unit/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
         }
     }
 }
