@@ -2,7 +2,7 @@
 ################################################################################
 
 # PROXIES (to Docker-containers commands)
-alias php="docker-compose run --rm php-fpm"
+alias php="docker-compose run --rm php-fpm php"
 alias composer="docker-compose run --rm php-fpm composer"
 alias codecept="docker-compose run --rm php-fpm ./vendor/bin/codecept"
 
@@ -40,6 +40,7 @@ permissions() {
 
 alias env-up="docker-compose up -d"
 alias env-stop="docker-compose stop"
+alias env-down="env-stop"
 alias env-restart="env-stop && env-up"
 alias env-build="docker-compose build"
 alias env-pull="docker-compose pull"
