@@ -9,7 +9,6 @@ services:
       - ./:/var/www
       - ./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini
     environment:
-      XDEBUG_CONFIG: "client_host=192.168.220.1"
       PHP_IDE_CONFIG: "serverName=Docker"
     networks:
       - internal
